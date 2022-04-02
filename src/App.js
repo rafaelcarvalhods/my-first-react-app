@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import {Button} from "antd";
 
-function App() {
+const App = () => {
+  
+  const onClickHome = () => {
+    console.log("Indo para página incial")
+  }
+
+  const onClickEquipe = () => {
+    console.log("Indo para página equipe")
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Teste</h1>
+      <nav>
+        <Button type="link">Home</Button>
+        <Button type="link">Equipe</Button>
+        <Button type="link">Sobre Nós</Button>
+        <Button type="link">Fim</Button>
+      </nav>  
+      <main>
+        <h2>Listagem</h2>
+        <Button>Cadastrar item</Button>
+      </main>
     </div>
   );
 }
