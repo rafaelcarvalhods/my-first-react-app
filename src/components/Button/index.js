@@ -7,7 +7,7 @@ const Button = ({text, onClick}) => (
         <button onClick={onClick}>
         {text}</button>
     </>
-    // ou usar o Destructuring
+    // ou
 
     // const {text} = props
     // return <button>{text}</button>
